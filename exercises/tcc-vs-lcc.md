@@ -6,10 +6,9 @@ A refresher on TCC and LCC is available in the [course notes](https://oscarlvp.g
 
 ## Answer
 
-TCC and LCC produce the same value when there are only direct connections 
-between methods within the class, and no indirect connections.
+TCC et LCC produisent les même valeurs quand il n'y a que des connexions directes entre les méthodes d'une classe, et aucune connexion indirecte.
 
-An example of such a class could be :
+Un exemple d'une telle classe peut être :
 
 ````Java
 public class example{
@@ -25,8 +24,8 @@ public class example{
 
 }
 ````
-Here, TCC is 1 and LCC is 1 since all methods are directly connected and there is no indirect connections.
+Ici, TCC vaut 1 et LCC vaut 1 puisque toutes méthodes sont directement connectées et qu'il n'y a pas de connexion indirecte.
 
-LCC can never be lower than TCC since TCC only considers direct 
-connections and LCC considers both direct and indirect connections.
-LCC is at minimum equal to TCC, when all connections in the class are direct.
+LCC ne peut jamais être plus petit que TCC puisque TCC ne considère que les connexions directes 
+tandis que LCC considère les connexions directes ainsi que les ocnnexions indirectes.
+LCC vaut au moins la valeur de TCC, quand toutes les connexions dans la class sont directes.
